@@ -18,6 +18,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -42,6 +43,42 @@
         android:layout_below="@+id/button2"
         android:text="Third Activity"
         android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="?android:textAppearance"
+        android:textSize="15dp"
+        android:layout_below="@+id/button3"
+        />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Enter your name"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit1"
+        android:text="Password"
+        android:textAppearance="?android:textAppearance"
+        android:textSize="15dp"
+        />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:hint="Enter your Password"
         />
 
 </RelativeLayout>

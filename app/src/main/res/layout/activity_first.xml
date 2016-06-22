@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_first"
@@ -7,10 +7,30 @@
     android:layout_height="match_parent"
     tools:context="com.example.udit.activityswitch.FirstActivity">
     <TextView
+        android:id="@+id/activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First Activity"
         android:textAppearance="?android:textAppearance"
         />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/eName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name:-"
+        android:layout_below="@+id/activity"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:textAppearance"
+        />
+
+    <TextView
+        android:id="@+id/ePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Pass:-"
+        android:layout_below="@+id/eName"
+        android:textAppearance="?android:textAppearance"
+        />
+
+</RelativeLayout>
